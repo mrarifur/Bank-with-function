@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>banking</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  
+</head>
+<body>
+    <header>
+        <h1 class="text-6xl text-center mt-16 ">page of  <span class="text-blue-700 font-medium"> money</span></h1>
+    </header>
+    <main>
+        <section class="mt-16">
+            <div class="grid grid-cols-3 gap-4 text-center">
+                <div class="bg-lime-400 ml-4">
+                    <h3 class="text-3xl">
+                        Deposit
+                    </h3>
+                    <h4 class="text-3xl"> 
+                         $ <span id="Deposit-total"> 00</span>
+                    </h4>
+                </div>
+
+                <div class="bg-green-600">
+                    <h3 class="text-3xl">
+                        withdraw
+                    </h3>
+                    <h4 class="text-3xl"> 
+                        $ <span id="Withdrawe-Total">
+                            00
+                        </span>
+                    </h4>
+                </div>
+
+                <div class="bg-cyan-400 mr-4">
+                    <h3 class="text-3xl">
+                        Balance
+                    </h3>
+                    <h4
+                     class="text-3xl"> 
+                        $ <span id="Balace-Total"> 1000</span>
+                        
+                    </h4>
+                </div>
+
+
+            </div>
+
+        </section>
+        <section class="mt-16">
+            <div  class="grid grid-cols-2 gap-4 text-center">
+                <div class="bg-rose-400">
+                    <input id="Deposit-input" type="text" placeholder="Deposit" class="border-2 mb-5 mx-10 mt-10" >
+                    <br>
+                    <button id="Deposit-button" class="bg-amber-300 w-24 mx-10 text-lg  mb-5"  > submit</button>
+    
+                </div>
+                <div class="bg-rose-400 ">
+                    <input id="withdraw-input" type="text" placeholder="withdraw" class="border-2 mb-5 mx-10 mt-10" >
+                    <br>
+                    <button id="Withdraw-button" class="bg-amber-300 w-24 text-lg mx-10 mb-5"  > submit</button>
+    
+                </div>
+
+            </div>
+         
+
+        </section>
+    </main>
+   
+    <script src="bank.js"></script>
+</body>
+</html>
